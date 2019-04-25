@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- All Linked Media -->
+    <link rel="icon" href="assets/images/icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/background.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <title>Listen</title>
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <div class="full home hover-magic">
+            <a class="center metal" href="index.html">
+                <i class="fas fa-home" ></i>
+            </a>
+        </div>
+
+        <div id="top" onclick="toTop()" title="Back to top">
+            <p> <i class="fas fa-arrow-up"> </i> </p>
+        </div>
+    </div>
+
+    <!--This part is only for the things that have to persist-->
+    <div id="parallax" onscroll="scrolled(this)">
+
+        <div class="parallax__layer" id="back-parallax">
+
+
+            <svg class=" notes" id="note1" enable-background="new 0 0 648 432" version="1.1" viewBox="0 0 648 432"
+                xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <path d="m428.9 64.1c-45.1 9.9-151.6 33.6-155.9 34.6-5.5 1.3-17.3 2.4-17.3 17.4v199.4c-12.4-7-31.3-7.9-50.2-1.1-28 10.1-45.3 33.2-38.6 51.7s34.8 25.3 62.7 15.2c26-9.4 42.8-30 39.7-47.7v-150.8c0-8.3-0.2-19 21.4-23.6 9.9-2.1 144.6-32.1 144.6-32.1v139.4c-12.4-7.2-31.5-8.2-50.6-1.3-28 10.1-45.3 33.2-38.6 51.7s34.8 25.3 62.7 15.2c25.8-9.3 42.4-29.6 39.8-47.2h0.3v-191.9c0-23.8 16.8-24.4 16.8-24.4v-13.1l-36.8 8.6z" />
+            </svg>
+            <svg class="  notes" id="note2" enable-background="new 0 0 648 432" version="1.1" viewBox="0 0 648 432"
+                xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <path d="m428.9 64.1c-45.1 9.9-151.6 33.6-155.9 34.6-5.5 1.3-17.3 2.4-17.3 17.4v199.4c-12.4-7-31.3-7.9-50.2-1.1-28 10.1-45.3 33.2-38.6 51.7s34.8 25.3 62.7 15.2c26-9.4 42.8-30 39.7-47.7v-150.8c0-8.3-0.2-19 21.4-23.6 9.9-2.1 144.6-32.1 144.6-32.1v139.4c-12.4-7.2-31.5-8.2-50.6-1.3-28 10.1-45.3 33.2-38.6 51.7s34.8 25.3 62.7 15.2c25.8-9.3 42.4-29.6 39.8-47.2h0.3v-191.9c0-23.8 16.8-24.4 16.8-24.4v-13.1l-36.8 8.6z" />
+            </svg>
+            <svg class="  notes" id="note3" enable-background="new 0 0 648 432" version="1.1" viewBox="0 0 648 432"
+                xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <path d="m428.9 64.1c-45.1 9.9-151.6 33.6-155.9 34.6-5.5 1.3-17.3 2.4-17.3 17.4v199.4c-12.4-7-31.3-7.9-50.2-1.1-28 10.1-45.3 33.2-38.6 51.7s34.8 25.3 62.7 15.2c26-9.4 42.8-30 39.7-47.7v-150.8c0-8.3-0.2-19 21.4-23.6 9.9-2.1 144.6-32.1 144.6-32.1v139.4c-12.4-7.2-31.5-8.2-50.6-1.3-28 10.1-45.3 33.2-38.6 51.7s34.8 25.3 62.7 15.2c25.8-9.3 42.4-29.6 39.8-47.2h0.3v-191.9c0-23.8 16.8-24.4 16.8-24.4v-13.1l-36.8 8.6z" />
+            </svg>
+            <svg class="  notes" id="note4" enable-background="new 0 0 648 432" version="1.1" viewBox="0 0 648 432"
+                xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <path d="m428.9 64.1c-45.1 9.9-151.6 33.6-155.9 34.6-5.5 1.3-17.3 2.4-17.3 17.4v199.4c-12.4-7-31.3-7.9-50.2-1.1-28 10.1-45.3 33.2-38.6 51.7s34.8 25.3 62.7 15.2c26-9.4 42.8-30 39.7-47.7v-150.8c0-8.3-0.2-19 21.4-23.6 9.9-2.1 144.6-32.1 144.6-32.1v139.4c-12.4-7.2-31.5-8.2-50.6-1.3-28 10.1-45.3 33.2-38.6 51.7s34.8 25.3 62.7 15.2c25.8-9.3 42.4-29.6 39.8-47.2h0.3v-191.9c0-23.8 16.8-24.4 16.8-24.4v-13.1l-36.8 8.6z" />
+            </svg>
+            <svg class="  notes" id="note5" enable-background="new 0 0 648 432" version="1.1" viewBox="0 0 648 432"
+                xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <path d="m428.9 64.1c-45.1 9.9-151.6 33.6-155.9 34.6-5.5 1.3-17.3 2.4-17.3 17.4v199.4c-12.4-7-31.3-7.9-50.2-1.1-28 10.1-45.3 33.2-38.6 51.7s34.8 25.3 62.7 15.2c26-9.4 42.8-30 39.7-47.7v-150.8c0-8.3-0.2-19 21.4-23.6 9.9-2.1 144.6-32.1 144.6-32.1v139.4c-12.4-7.2-31.5-8.2-50.6-1.3-28 10.1-45.3 33.2-38.6 51.7s34.8 25.3 62.7 15.2c25.8-9.3 42.4-29.6 39.8-47.2h0.3v-191.9c0-23.8 16.8-24.4 16.8-24.4v-13.1l-36.8 8.6z" />
+            </svg>
+            <svg class="  notes2" id="note6" enable-background="new 0 0 648 432" version="1.1" viewBox="0 0 648 432"
+                xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <path d="m130.72 296.43c-17.015-0.98893-34.387-11.661-44.776-23.91-12.046-14.202-17.012-33.51-15.74-49.367 3.737-46.591 54.404-74.128 73.159-94.48 12.554-13.622 15.186-20.263 17.99-27.269 5.4288-13.562 6.3033-29.451-4.4595-30.637-10.276-1.1326-18.73 15.027-22.506 26.072-3.3955 9.9336-5.6524 19.9-3.6095 34.871 0.91802 6.7259 26.187 194.47 26.613 197.38 4.2557 29.083-12.376 41.117-29.355 43.258-36.664 4.6223-48.428-32.637-31.996-46.787 12.651-10.895 31.056-1.5416 30.061 16.37-0.88048 15.865-16.437 16.332-20.411 15.97 6.1018 10.943 52.103 16.661 45.039-32.781-0.99252-6.9477-24.343-183.38-24.915-187.33-4.2837-29.556-4.9364-52.951 10.463-80.253 5.6851-10.078 14.67-16.585 19.08-15.733 0.96927 0.18724 1.935 0.54307 2.7016 1.3341 11.813 12.171 15.436 39.162 14.142 54.667-1.3252 15.876-2.0637 32.31-17.849 51.476-6.1089 7.4168-24.751 23.756-35.439 33.143-15.018 13.189-25.911 24.708-31.804 38.605-6.6234 15.618-7.7447 35.279 7.2153 52.723 8.6055 9.8561 22.884 16.85 34.9 16.999 33.412 0.41487 43.169-16.055 43.481-34.707 0.51327-30.712-36.564-42.324-51.808-21.207-8.8386 12.245-4.9537 25.133 0.9824 31.264 2.0375 2.1043 4.3135 3.7072 6.4666 4.6008 0.78029 0.3237 2.6158 1.1773 2.0948 2.4268-0.43339 1.0396-1.2751 1.0981-2.0417 1.0063-9.6129-1.1529-20.257-10.341-22.875-26.146-3.8139-23.036 16.514-50.361 45.531-45.892 18.997 2.9257 36.635 19.272 35.088 49.71-1.3263 26.087-22.953 46.507-55.424 44.62z" />
+            </svg>
+            <svg class="  notes2" id="note7" version="1.1" viewBox="0 0 757.02731 792.00899" xmlns="http://www.w3.org/2000/svg">
+                <g transform="matrix(3.0949 0 0 3.0949 -612.51 -1467.2)">
+                    <path d="m374.53 575.26c-5.5878-5.0203-2.5308-13.198 6.6932-17.903 3.0769-1.5697 5.3464-2.2491 9.4058-2.129 2.4622 0.0631 5.2939 1.4824 5.2939 1.4824 0-18.055-0.0682-52.28-0.0682-69.151 1.0003 6e-3 1.6402-6e-3 3.0409-6e-3 0 0.99254-0.0134 1.7062-0.0134 2.586 0 0.85738 0.0603 1.4141 0.1432 1.9529 0.96866 6.2992 2.3792 8.7789 9.422 16.564 8.9072 9.8456 11.494 15.776 11.441 23.652-0.0492 7.3881-6.548 23.212-8.0256 22.556 2.0546-5.536 4.8253-11.508 5.5622-16.506 0.90056-6.1073-1.5805-14.727-5.5733-19.274-3.2836-3.7398-10.847-7.0847-12.91-7.0847 0 0-0.0876 36.372-0.0876 50.162 0 2.3747-2.1513 6.4006-3.3631 7.8481-5.5263 6.6011-16.134 9.5899-20.962 5.2519z" />
+                </g>
+            </svg>
+            <svg class="  notes2" id="note8" version="1.1" viewBox="0 0 757.02731 792.00899" xmlns="http://www.w3.org/2000/svg">
+                <g transform="matrix(3.0949 0 0 3.0949 -830.48 -1467.2)">
+                    <path d="m374.53 575.26c-5.5878-5.0203-2.5308-13.198 6.6932-17.903 3.0769-1.5697 5.3464-2.2491 9.4058-2.129 2.4622 0.0631 5.2939 1.4824 5.2939 1.4824 0-18.055-0.0682-52.28-0.0682-69.151 1.0003 6e-3 1.6402-6e-3 3.0409-6e-3l0.0471 24.445s-0.0876 36.372-0.0876 50.162c0 2.3747-2.1513 6.4006-3.3631 7.8481-5.5263 6.6011-16.134 9.5899-20.962 5.2519z" />
+                </g>
+            </svg>
+            <svg class="  notes2" id="note9" version="1.1" viewBox="0 0 757.02731 792.00899" xmlns="http://www.w3.org/2000/svg">
+                <g transform="matrix(3.0949 0 0 3.0949 -830.48 -1467.2)">
+                    <path d="m374.53 575.26c-5.5878-5.0203-2.5308-13.198 6.6932-17.903 3.0769-1.5697 5.3464-2.2491 9.4058-2.129 2.4622 0.0631 5.2939 1.4824 5.2939 1.4824 0-18.055-0.0682-52.28-0.0682-69.151 1.0003 6e-3 1.6402-6e-3 3.0409-6e-3l0.0471 24.445s-0.0876 36.372-0.0876 50.162c0 2.3747-2.1513 6.4006-3.3631 7.8481-5.5263 6.6011-16.134 9.5899-20.962 5.2519z" />
+                </g>
+            </svg>
+            <svg class="  notes" id="note10" enable-background="new 0 0 648 432" version="1.1" viewBox="0 0 648 432"
+                xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <path d="m428.9 64.1c-45.1 9.9-151.6 33.6-155.9 34.6-5.5 1.3-17.3 2.4-17.3 17.4v199.4c-12.4-7-31.3-7.9-50.2-1.1-28 10.1-45.3 33.2-38.6 51.7s34.8 25.3 62.7 15.2c26-9.4 42.8-30 39.7-47.7v-150.8c0-8.3-0.2-19 21.4-23.6 9.9-2.1 144.6-32.1 144.6-32.1v139.4c-12.4-7.2-31.5-8.2-50.6-1.3-28 10.1-45.3 33.2-38.6 51.7s34.8 25.3 62.7 15.2c25.8-9.3 42.4-29.6 39.8-47.2h0.3v-191.9c0-23.8 16.8-24.4 16.8-24.4v-13.1l-36.8 8.6z" />
+            </svg>
+            <svg class="  notes2" id="note11" version="1.1" viewBox="0 0 757.02731 792.00899" xmlns="http://www.w3.org/2000/svg">
+                <g transform="matrix(3.0949 0 0 3.0949 -830.48 -1467.2)">
+                    <path d="m374.53 575.26c-5.5878-5.0203-2.5308-13.198 6.6932-17.903 3.0769-1.5697 5.3464-2.2491 9.4058-2.129 2.4622 0.0631 5.2939 1.4824 5.2939 1.4824 0-18.055-0.0682-52.28-0.0682-69.151 1.0003 6e-3 1.6402-6e-3 3.0409-6e-3l0.0471 24.445s-0.0876 36.372-0.0876 50.162c0 2.3747-2.1513 6.4006-3.3631 7.8481-5.5263 6.6011-16.134 9.5899-20.962 5.2519z" />
+                </g>
+            </svg>
+            <svg class="  notes" id="note12" enable-background="new 0 0 648 432" version="1.1" viewBox="0 0 648 432"
+                xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <path d="m428.9 64.1c-45.1 9.9-151.6 33.6-155.9 34.6-5.5 1.3-17.3 2.4-17.3 17.4v199.4c-12.4-7-31.3-7.9-50.2-1.1-28 10.1-45.3 33.2-38.6 51.7s34.8 25.3 62.7 15.2c26-9.4 42.8-30 39.7-47.7v-150.8c0-8.3-0.2-19 21.4-23.6 9.9-2.1 144.6-32.1 144.6-32.1v139.4c-12.4-7.2-31.5-8.2-50.6-1.3-28 10.1-45.3 33.2-38.6 51.7s34.8 25.3 62.7 15.2c25.8-9.3 42.4-29.6 39.8-47.2h0.3v-191.9c0-23.8 16.8-24.4 16.8-24.4v-13.1l-36.8 8.6z" />
+            </svg>
+            <svg class="  notes2" id="note13" version="1.1" viewBox="0 0 757.02731 792.00899" xmlns="http://www.w3.org/2000/svg">
+                <g transform="matrix(3.0949 0 0 3.0949 -830.48 -1467.2)">
+                    <path d="m374.53 575.26c-5.5878-5.0203-2.5308-13.198 6.6932-17.903 3.0769-1.5697 5.3464-2.2491 9.4058-2.129 2.4622 0.0631 5.2939 1.4824 5.2939 1.4824 0-18.055-0.0682-52.28-0.0682-69.151 1.0003 6e-3 1.6402-6e-3 3.0409-6e-3l0.0471 24.445s-0.0876 36.372-0.0876 50.162c0 2.3747-2.1513 6.4006-3.3631 7.8481-5.5263 6.6011-16.134 9.5899-20.962 5.2519z" />
+                </g>
+            </svg>
+            <svg class="  notes2" id="note14" version="1.1" viewBox="0 0 757.02731 792.00899" xmlns="http://www.w3.org/2000/svg">
+                <g transform="matrix(3.0949 0 0 3.0949 -830.48 -1467.2)">
+                    <path d="m374.53 575.26c-5.5878-5.0203-2.5308-13.198 6.6932-17.903 3.0769-1.5697 5.3464-2.2491 9.4058-2.129 2.4622 0.0631 5.2939 1.4824 5.2939 1.4824 0-18.055-0.0682-52.28-0.0682-69.151 1.0003 6e-3 1.6402-6e-3 3.0409-6e-3l0.0471 24.445s-0.0876 36.372-0.0876 50.162c0 2.3747-2.1513 6.4006-3.3631 7.8481-5.5263 6.6011-16.134 9.5899-20.962 5.2519z" />
+                </g>
+            </svg>
+
+        </div>
+
+        <div class="slideshow-container">
+
+            <div class="parallax__layer parallax__layer--base">
+
+                <!--Now comes the opening slide-->
+                <div class="slide fade">
+
+                    <h1 class="resourcestitle"> Resources </h1>
+
+                    <h2 class="resourcesheading"> Picture Media </h2>
+                    <p class="resourcestext"> All pictures were taken from the site Pinterest (checking they weren't
+                        against copyright).<br>
+                        The pictures were then edited by me, adding a background tint color based on which genre they
+                        were from. </p>
+
+                    <h2 class="resourcesheading"> Informational Text about Music Genres and Artists </h2>
+                    <ul class="resourcestext">
+                        <li class="reslist">https://www.imdb.com/</li>
+                        <li class="reslist">https://www.biography.com/people/</li>
+                        <li class="reslist">https://www.britannica.com/</li>
+                        <li class="reslist">Robinson, T. (2017). Popular music theory and analysis : a research and
+                            information guide. Retrieved from https://ebookcentral.proquest.com</li>
+                    </ul>
+
+                    <h2 class="resourcesheading"> Borrowed HTML, CSS and Media Sources </h2>
+                    <p class="resourcestext">I took the idea of a slideshow here:
+                        https://www.w3schools.com/howto/howto_js_slideshow.asp and I converted it <br>
+                        into a set of slides used to navigate through the genres, because I didn't want the user to
+                        leave from one site to another.</p>
+
+                    <h2 class="resourcesheading"> About the Site </h2>
+                    <ul class="resourcestext">
+                        <li class="reslist"> a) Graphic created from scratch: All the drawings of the instruments on
+                            the different music genres were drawn <br>
+                            from scratch by me.</li>
+                        <li class="reslist"> b) I used embedded media from YouTube. These are included on the bottom of
+                            each page (excluding the home page <br>
+                            that the user first lands on).</li>
+                        <li class="reslist"> c) All images use the CSS image rollover effect, where after being hovered
+                            over by the user, they scale.</li>
+                        <li class="reslist"> d) JavaScript is used for the functionality of the slide show (this was
+                            selected for easy animation on the page), <br>
+                            JavaScript is also used for the background color to change for each slide. I also used
+                            JavaScript for a button to appear that the user <br>
+                            can use to go to the top of the page.</li>
+                    </ul>
+
+                    <h2 class="resourcesheading"> Summary of the Site </h2>
+                    <p class="resourcestext">I am very proud of all the JavaScript I used, as it was my first time
+                        implementing JavaScript and most of it was <br>
+                        based on my ideas and thoughts. I am also pleased with the way the pictures of the instruments
+                        that I drew turned out. Only recently did I <br>
+                        start using Illustrator and I am proud of how much I have learnt so far.<br>
+                        Another thing I feel was done really well was the consistency of the design. Every page seems
+                        in a way unique, yet they are all following <br>
+                        the same principle.<br>
+                        One factor I would've liked to have improved was the audio. To achieve what I wanted to do with
+                        the music was too complicated to be done. I <br>
+                        would've liked to have a different style and a different layout when on devices where the
+                        height is longer than the width. <br>
+                        All in all I am proud of what I managed to do after one course of Web and Mobile.</p>
+
+                    <h2 class="resourcesheading"> Extra Work </h2>
+                    <p class="resourcestext"> For extra work I made the site a parallax site. I managed to keep it all
+                        within one site to prevent the user <br>
+                        from having to load new pages. All the images of instruments were drawn by me. I also used svgs
+                        very often instead of restorized images <br>
+                        to reduce loading time. </p>
+                    <footer class="metalbox">
+                        &#169; Copyright Josip Muzic <br>
+                        ISTE-140-700 Web & Mobile I - Project 3
+                        <a class="home metalbox" href="../index.html">
+                            <p><i class="fas fa-home"></i></p>
+                        </a>
+                        <div class="home metalbox" onclick="toTop()">
+                            *Resources* &nbsp;&nbsp;&nbsp;
+                        </div>
+                    </footer>
+                </div>
+
+                <!--That was the opening slide, now comes the jazz slide-->
+                <!--Closed off all slides, now closing off everything else.-->
+            </div>
+
+        </div>
+    </div>
+
+    <!--Under this is just a few javaScript links-->
+    <script src="assets/javascript/functions.js"></script>
+</body>
+
+
+</html>

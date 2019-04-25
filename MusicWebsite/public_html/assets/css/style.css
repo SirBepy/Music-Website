@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC:900|Capriola|Courgette|Fascinate+Inline|Raleway|Leckerli+One|Metal+Mania|Permanent+Marker|Roboto');
+*{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    -moz-user-select: none;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+html,body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+/*============This is good practice====================*/
+a{
+    color: white;
+    text-decoration: none;
+}
+.nav-bar{
+    position: fixed;
+    height: 5vw;
+    width: 100%;
+    left: 0; top: 0;
+    z-index: 9;
+    color: white;
+}
+
+.jazz{
+    background-color: #a622c4;
+    font-family: 'Fascinate Inline', sans-serif;
+}
+.classical{
+    background-color: #4a57ff;
+    font-family: 'Leckerli One', sans-serif;
+}
+.reggae{
+    background-color: #54d95f;
+    font-family: 'Capriola', sans-serif;
+}
+.country{
+    background-color: #fff200;
+    font-family: 'Alegreya SC', sans-serif;
+}
+.pop{
+    background-color: #e03535;
+    font-family: 'Permanent Marker', sans-serif;
+}
+.metal{
+    background-color: #000000;
+    color: white;
+    font-family: 'Metal Mania', sans-serif;
+}
+
+
+.country:hover{
+    background-color: #fff200;
+    color: black;
+}
+
+
+.hover-magic{
+    float: left;
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    margin: 1vw;
+    line-height: 7.2vw;
+    text-align: center;
+    overflow: hidden;
+    font-size: 2vw;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: height 1s, width 1s, background-color 1s,opacity 2s;
+    z-index: 1;
+}
+.hover-magic p{
+    opacity: 0;
+    transition: 0.3s;
+    margin: auto;
+
+}
+
+.hover-magic:hover{
+    height: 7vw;
+    width: 7vw;
+    opacity: 1;
+    transition: height 1s, width 1s, background-color 1s,opacity 2s;
+}
+
+.hover-magic:hover > p{
+    opacity: 1;
+    transition: opacity 1s;
+    transition-delay: 0.3s;
+    font-size: 4vw;
+}
+
+#top{
+    visibility: hidden;
+    position: absolute;
+    top: 90vh;
+    right:48vw;
+    width: 4vw;
+    height: 4vw;
+    line-height: 4vw;
+    font-size: 2vw;
+    opacity: 0.4;
+    border-radius: 50%;
+    text-align: center;
+    transition: background-color 0.3s,opacity 0.3s;
+}
+
+#top:hover{
+    opacity: 0.8;
+}
+.home{
+    border-radius: 50%;
+    font-size: 2vw;
+    float: right;
+    transition: transform 0.5s;
+}
+.home:hover{
+    transform: scale(1.2);
+}
+.full{
+    float: left;
+    background: #000000;
+    color: white;
+}
+.center{
+    font-size: 3vw;
+    transition: transform 0.5s;
+}
+
+/*================================That was all for the nav bar==============================*/
+
+.instruments{
+    max-width: 49%;
+    height: 40vw;
+    position: absolute;
+    right: 5vw;
+    top: 5vw;
+}
+
+.history, .people, .genres{
+    position: absolute;
+    top: 28vw;
+    color: white;
+    animation: goingInCircles 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.animation-stop:hover{
+    animation-play-state: paused;
+}
+.history{
+    left: 15vw;
+    animation-delay:2s;
+}
+.people{
+    left: 30vw;
+    animation-delay:1s;
+}
+.genres{
+    left: 45vw;
+}
+
+
+.left, .right{
+    position: absolute;
+    width: 40vw;
+    height: 70vh;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5vw;
+}
+.left{
+    left: 5vw;
+}
+.base{
+    height: 110vh;
+    width: 100vw;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+.right{
+    right: 5vw;
+}
+
+.left p,.right ul, .artistinfo{
+    font-size: 1.5vw;
+    padding: 2vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.right ul{
+    padding: 4vw;
+}
+h1{
+    font-size: 4vw;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*==========Necessary for the artist part=====*/
+
+.person1, .person2, .person3{
+    position: absolute;
+    height: 60vw;
+    width: 20vw;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+}
+.person1{
+    left: 12vw;
+}
+.person2{
+    left: 37.5vw;
+}
+.person3{
+    right: 12vw;
+}
+
+.person1 img, .person2 img, .person3 img{
+    position: absolute;
+    overflow: hidden;
+    height: 20vw;
+    width: 13vw;
+    left: 23%;
+    border-radius: 1vw;
+}
+
+.artistinfo{
+    position: absolute;
+    bottom: 5vw;
+    width: 20vw;
+    height: 30vw;
+    padding: 0.5vw;
+    font-size: 1vw;
+}
+
+img{
+    transition: transform 0.5s;
+}
+img:hover{
+    transform: scale(1.1);
+}
+
+/*================Video part==================*/
+.video{
+    position: relative;
+    overflow: hidden;
+    width: 47vw;
+    height: 26.6vw;
+    border-radius: 2vw 2vw 2vw 2vw;
+    top: 5vw;
+    left: 26.5vw;
+}
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 47vw;
+    height: 26.6vw;
+    border: 0;
+}
+/*================Music Slide================*/
+.music-title{
+    font-size: 10vw;
+    width:100%;
+    font-family: 'Courgette', sans-serif;
+    line-height: 30vw;
+    text-align: center;
+}
+
+.music-title p{
+    font-size: 2vw;
+    transition-delay: 5s;
+}
+.write{
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    animation: dash 10s linear forwards;
+   }
+@keyframes dash {
+    to  {stroke-dashoffset: 0;}
+}
+
+.continue{
+    position: absolute;
+    top: 15vw;
+    left: 26.7vw;
+    animation: becomeVisible 0.5s 6s forwards;
+    opacity: 0;
+  }
+
+  @keyframes becomeVisible {
+    to   { opacity: 1; }
+  }
+
+/*=============Jazz Slide===================*/
+.jazz-title,.classic-title,.reggae-title,.country-title,.pop-title,.metal-title{
+    font-size: 14vw;
+    width:70%;
+    padding-left: 5vw;
+    position: relative;
+    float: left;
+    font-family: 'Fascinate Inline', sans-serif;
+    line-height: 15vw;
+    color: #390146;
+}
+.jazzy{
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.5),rgba(208,100,229,0.5));
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(208,100,229,0.5));
+}
+.jazzbox{
+    color: rgb(83, 22, 95)
+}
+
+/*=============Classic Slide===================*/
+.classic-title{
+    font-family: 'Leckerli One', sans-serif;
+    color: #003861;
+}
+.classicy{
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.5),rgba(66,160,229,0.5));
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(66,160,229,0.5));
+}
+.classicbox{
+    color: #05497a;
+}
+/*=============Reggae Slide===================*/
+.reggae-title{
+    font-family: 'Capriola', sans-serif;
+    color: #004711;
+}
+.reggaey{
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.5),rgba(66,229,106,0.5));
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(66,229,106,0.5));
+}
+
+.reggaebox{
+    color: #026b1a;
+}
+/*=============Country Slide===================*/
+.country-title{
+    font-family: 'Alegreya SC', sans-serif;
+    color: #614700;
+}
+.countryy{
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.5),rgba(244,202,86,0.5));
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(244,202,86,0.5));
+}
+
+.countrybox{
+    color: #9c770f;
+}
+/*=============Pop Slide===================*/
+.pop-title{
+    font-family: 'Permanent Marker', sans-serif;
+    color: #580522;
+}
+.popy{
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.5),rgba(231, 129, 129, 0.5));
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(231, 129, 129, 0.5));
+}
+.popbox{
+    color: #7c022d;
+}
+/*=============Metal Slide===================*/
+.metal-title{
+    font-family: 'Metal Mania', sans-serif;
+    color: #000000;
+}
+.metaly{
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.5),rgba(0, 0, 0, 0.5));
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5),rgba(0, 0, 0, 0.5));
+}
+
+.metalbox{
+    color: #000000;
+}
+
+/* ======================  Resources Page   ====================*/
+.resourcestitle {
+    padding-left: 5vw;
+    padding-top: 1vh;
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+.resourcestext, .resourcesheading {
+  padding-left: 5vw;
+  padding-top: 3vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.reslist {
+  margin-left: 5vw;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/*Needs to override other things, thats why its on the bottom*/
+
+.h2{
+    position: absolute;
+    font-size: 2vw;
+    top: 15vw;
+    left: 1.2vw;
+}
+
+footer {
+    padding: 1.5vw;
+    font-family: 'Raleway';
+    font-size: 1.5vw;
+  }

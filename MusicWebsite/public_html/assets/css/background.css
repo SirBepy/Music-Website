@@ -1,0 +1,211 @@
+/*First lets do the slides*/
+.slide{
+    padding-top: 10vw;
+}
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+  
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/*Now comes the parallax part*/
+#parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#back-parallax {
+    transform: translateZ(-1px) scale(2);
+    overflow-x: hidden;
+    overflow-y: hidden; 
+}
+
+/*Now come the notes...*/
+.notes, .notes2{
+    width: 10vw;
+    position: absolute;
+    opacity: 0.5;
+    transform: rotate(30deg); 
+}
+.notes2{
+    width: 15vw;
+}
+#note1{
+    left: 0vw;
+    top: 40vw;
+    animation-delay: -5s;
+}
+#note2{
+    left: 14vw;
+    top: 14vw;
+    animation-delay: -1s;
+}
+#note3{
+    left: 40vw;
+    top: 5vw;
+    animation-delay: -3s;
+}
+#note4{
+    left: 70vw;
+    top: 10vw;
+    animation-delay: -2.5s;
+}
+#note5{
+    left: 80vw;
+    top: 40vw;
+    animation-delay: -6s;
+}
+#note6{
+    left: 5vw;
+    top: 7vw;
+    animation-delay: -6s;
+}
+#note7{
+    left: 40vw;
+    top: 30vw;
+    
+}
+#note8{
+    left: 20vw;
+    top: 42vw;
+    animation-delay: -3s;
+}
+#note9{
+    left: 80vw;
+    top: 60vw;
+    animation-delay: -1s;
+}
+#note10{
+    left: 70vw;
+    top: 80vw;
+    animation-delay: -10s;
+}
+#note11{
+    left: 3vw;
+    top: 70vw;
+}
+#note12{
+    left: 49vw;
+    top: 67vw;
+    animation-delay: -6s;
+}
+#note13{
+    left: 21vw;
+    top: 91vw;
+}
+#note14{
+    left: 74vw;
+    top: 89vw;
+}
+#note15{
+    left: 6vw;
+    top: 100vw;
+    animation-delay: -3s;
+}
+#note16{
+    top: 120vw;
+    left: 20vw;
+    animation-delay: -7s;
+}
+#note17{
+    top:140vw;
+    left: 70vw;
+    animation-delay: -2s;
+}
+#note18{
+    top: 150vw;
+    left: 80vw;
+    animation-delay: -10s;
+}
+#note19{
+    top: 134vw;
+    left: 0;
+    animation-delay: -1s;
+}
+#note20{
+    top: 150vw;
+    left: 13vw;
+    animation-delay: -5s;
+}
+#note21{
+    top: 126vw;
+    left: 68vw;
+    animation-delay: -9s;
+}
+#note22{
+    top: 111vw;
+    left: 53vw;
+    animation-delay: -8s;
+}
+#note23{
+    top: 156vw;
+    left: 37vw;
+    animation-delay: -9s;
+}
+#note24{
+    top: 167vw;
+    left: 63vw;
+    animation-delay: -1s;
+}
+
+
+.text{
+    width: 100%;
+    height: 80vw;
+}
+
+.notes, .notes2{
+    animation: swing 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes swing {
+    0% { transform: translate(0px, 0px) rotate(30deg); }
+    50% { transform: translate(100px, 0px) rotate(-20deg); }
+    100% { transform: translate(0px, 0px) rotate(30deg); }
+}
+
+@keyframes goingInCircles {
+
+    0% { transform: translate(0, 0); }
+    6% { transform: translate(0.6vw, 1.8vw); }
+    12% { transform: translate(2.5vw, 2.5vw); }
+    18% { transform: translate(4.4vw, 1.8vw); }
+    25% { transform: translate(5vw, 0vw); }
+    31% { transform: translate(5.6vw, -1.8vw); }
+    37% { transform: translate(7.5vw, -2.5vw); }   
+    43% { transform: translate(9.4vw, -1.8vw); }
+    50% { transform: translate(10vw, 0); }
+    56% { transform: translate(9.4vw, 1.8vw); }
+    62% { transform: translate(7.5vw, 2.5vw); }
+    68% { transform: translate(5.6vw, 1.8vw); }
+    75% { transform: translate(5.0vw, 0); }
+    81% { transform: translate(4.4vw, -1.8vw); }
+    87% { transform: translate(2.5vw, -2.5vw); }
+    93% { transform: translate(0.6vw, -1.8vw); }
+    100% { transform: translate(0, 0); }
+}
